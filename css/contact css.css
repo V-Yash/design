@@ -1,0 +1,114 @@
+body
+{
+  background-image: url("contact.jpg");
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:100% 100%;
+  color:lightgrey;
+}
+h2{
+  margin-left: 20px;
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+#contact {
+    width:  100%;
+    position: fixed;
+    float: right;
+    margin-right: 10px;
+  }
+#contact-section {
+    width:  500px;}
+#section, #contact-form {
+    float: left;
+}
+#section {
+  float: left;
+margin-right:10px;
+    width: 70%;
+}
+
+*
+{
+  padding: 0;
+  font-family: cursive,sans-serif;
+}
+h1{
+  margin: 40px;
+  text-align: center;
+  color: rgb(255, 204, 153);
+}
+p{
+  margin: 30px;
+  text-align: left;
+  color: lightgrey;
+}h2
+{
+  margin-right: 200px;
+}
+p1{
+  margin: 30px;
+  text-align: left;
+  color: lightgrey;
+}
+.contact-form{
+  float: right;
+  text-align: right;
+  width: 450px;
+  margin-top: 0px;
+  padding: 0 7px;
+  overflow: hiddens;
+}
+.contact-form-text{
+   display: block;
+   width: 100%;
+   box-sizing: border-box;
+   margin: 16px 0;
+   border: 0;
+   background: transperent;
+   padding: 20px 40px;
+   outline: none;
+   color: black;
+   transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 100px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}

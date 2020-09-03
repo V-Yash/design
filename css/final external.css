@@ -1,0 +1,174 @@
+body{
+  background:url('b1.jpg') no-repeat;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size:100% 100%;
+}
+p1,h,h2{
+  color: white;
+  text-align: center;
+}
+h5,i
+{
+color: rgb(255, 255, 204);
+  text-align: center;
+  font-style: Garamond;
+font-size: 30px;
+margin-top: 70px;
+}
+h4
+{
+  text-align: center;
+  color:lightgrey;
+  font-style: Garamond;
+ text-decoration-line: underline;
+ text-decoration-style: double;
+font-size: 45px;
+
+}
+.round-pic2 {
+    display: round;
+    width: 400px;
+    height: 300px;
+    margin: 5em auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 99em;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border: 2px solid gray;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+}
+.round-pic2:hover {
+    opacity:0.6;
+}
+
+
+.round-pic2:hover::before{
+    content: '“I did you a big favor. I have successfully privatized world peace. What more do you want?”';
+    position: center;
+    margin: 6em auto;
+    top: 100px;
+    left: 50px;
+    width: 120px;
+    height: 0px;
+    color:black;
+    text-align: ;
+    display: inline-block;
+}
+.round-pic3 {
+    display: round;
+    width: 400px;
+    height: 300px;
+    margin: 5em auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 99em;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border: 2px solid gray;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+.round-pic3:hover {
+    opacity:0.6;
+}
+
+.round-pic3:hover::before{
+    content: '“Nothing is real.; Everything is permitted.””';
+    position: center;
+    margin: 7em auto;
+    top: 100px;
+    left: 120px;
+    width: 120px;
+    height: 0px;
+    color:lightgrey;
+    text-align:center ;
+    display:inline-block;
+}
+*{
+  margin:auto;
+  font-family: tahoma;
+  color: #333;
+  font-size: 100%;
+  line-height: 1.5;
+}
+nav{
+  --duration:.5s;
+  --easing:ease-in-out;
+  position:fixed;
+  width:220px;
+  margin: 20px;
+
+}
+nav ol{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+nav li{
+  margin: -4px 0 0 0;
+}
+nav a{
+  display: block;
+  text-decoration: none;
+  background: white;
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing),
+   color var(--duration) var(--easing);
+  transition-delay: var(--delay-out);
+  border-radius: 4px;
+  padding: 1em 1.52em;
+}
+nav a:hover{
+  background: #efefef;
+}
+nav header {
+  font-weight: 600;
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing),
+  color var(--duration) var(--easing);
+  transition-delay: var(--delay-out);
+  border-radius: 4px;
+  padding: 1em 1.52em;
+}
+nav header span{
+   border: none;
+   background: transparent;
+   font-size: 1.5em;
+   padding: 0;
+   cursor: pointer;
+   line-height: 1;
+   float:right;
+ }
+ nav footer button {
+   position: absolute;
+   top: 0;
+   left: 0;
+   border: none;
+   padding: calc(1em - 2px);
+   width: 100%;
+   transform-origin: 0 0;
+   transition: transform var(--duration) var(--easing);
+   transition-delay: calc(var(--duration) +
+   (.1s * (var(--count) / 2)));
+   cursor: pointer;
+   outline: none;
+   background: #cdcdcd;
+   opacity: 0;
+ }
+ nav.closed a,
+ nav.closed header {
+   transform: translateY(calc(var(--top) * -1))
+   scaleY(0.1) scaleX(0.2);
+   transition-delay: var(--delay-in);
+   color: transparent;
+ }
+ nav.closed footer button {
+   transition-delay: 0s;
+   transform: scaleY(0.7) scaleX(0.2);
+ }
